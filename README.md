@@ -16,6 +16,7 @@
    - [初识Html](./html/ImetHtml.md)
    - [HTML编码规范](./html/htmlStandards.md)
 - [Css](./css/css.md)
+   - [初识CSS](./css//ImetCSS.md)
 - [layout](./layout/layout.md)
 - [JavaScript](./JavaScript/JavaScript.md)
    - [标准参考教程](http://javascript.ruanyifeng.com/)
