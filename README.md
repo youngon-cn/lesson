@@ -17,5 +17,7 @@
    - [HTML编码规范](./html/htmlStandards.md)
 - [Css](./css/css.md)
 - [layout](./layout/layout.md)
+- [JavaScript](./JavaScript/JavaScript.md)
+- [Node.js](./Node/node.md)
 - [工具](./tool/tool.md)
    - [Git](./tool/git.md)
