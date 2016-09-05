@@ -13,6 +13,6 @@
 ## web路线
 
 - [Html](./html/html.md)
-   - [初始Html](./html/ImetHtml.md)
+   - [初识Html](./html/ImetHtml.md)
 - [Css](./css/css.md)
 - [layout](./layout/layout.md)
