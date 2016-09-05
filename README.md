@@ -14,5 +14,6 @@
 
 - [Html](./html/html.md)
    - [初识Html](./html/ImetHtml.md)
+   - [HTML编码规范](./html/htmlStandards.md)
 - [Css](./css/css.md)
 - [layout](./layout/layout.md)
