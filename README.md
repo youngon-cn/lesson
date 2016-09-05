@@ -18,6 +18,7 @@
 - [Css](./css/css.md)
 - [layout](./layout/layout.md)
 - [JavaScript](./JavaScript/JavaScript.md)
+   - [标准参考教程](http://javascript.ruanyifeng.com/)
 - [Node.js](./Node/node.md)
 - [工具](./tool/tool.md)
    - [Git](./tool/git.md)
