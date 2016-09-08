@@ -1,5 +1,7 @@
 # Git
 
+![git](../img/git.png)
+
 ## 获取与创建项目
 
 ### git init
