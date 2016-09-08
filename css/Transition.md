@@ -10,7 +10,24 @@
 - `transition-timing-function` : 在延续时间段，变换的速率变化 .
 - `transition- delay` : 变换延迟时间 .
 
+###  transition :  `<property>`, `<duration>`, `<animation type>`, `<delay>`
+
+>有时我们不只改变一个CSS效果的属性, 而是想改变两个或者多个CSS属性的`transition`效果，那么我们只要把几个`transition`的声明串 在一起, 用逗号（“``, ``”）隔开,然后各自可以有各自不同的延续时间和其时间的速率变换方式。但需要值得注意的一点: `transition-delay`与 `transition-duration`的值都是时间, 所以要区分它们在连写中的位置, 一般浏览器会根据先后顺序决定, 第一个可以解析为时间的怭值为 `transition-duration`第二个为t`ransition-delay`。
+
+>**如：**  
+
+````CSS
+a {
+-moz-transition: background 0.5s ease-in,color 0.3s ease-out;
+-webkit-transition: background 0.5s ease-in,color 0.3s ease-out;
+-o-transition: background 0.5s ease-in,color 0.3s ease-out;
+transition: background 0.5s ease-in,color 0.3s ease-out; }
+}
+````
+
 ---
+
+
 ### transition-property  : `none` ｜ `all` ｜  `[indent]`
 >用来指定当元素其中一个属性改变时执行`transition`效果,其主要有以下几个值:`none(没有属性改变)`;`all（所有属性改变）`这个也是其默认值;`indent(元素属性名)`;当其值为`none`时,`transition`马上停止执行,当指定为`all`时,则元素产生任何属性值变化时都将执行`transition`效果,`ident`是可以指定元素的某一个属性值.
 
@@ -29,7 +46,7 @@
  - `paint server (SVG) :` 只支持下面的情况: 从`gradient`到`gradient`以及`color`到`color`, 然后工作与上面类似;
  - `space-separated list of above :` 如果列表有相同的项目数值, 则列表每一项按照上面的规则进行变化, 否则无变化;
  - `a shorthand property :` 如果缩写的所有部分都可以实现动画，则会像所有单个属性变化一样变化。
- > *注:* 具体什么CSS属性可以实现transition效果，在W3C官网中列出了所有可以实现transition效果的CSS属性值以及值的类型，大家可以点这里了解详情。这里需要提醒一点是，并不是什么属性改变都为触发transition动作效果，比如页面的自适应宽度，当浏览器改变宽度时，并不会触发transition的效果。但上述表格所示的属性类型改变都会触发一个transition动作效果。
+ > **注:** 具体什么CSS属性可以实现transition效果，在W3C官网中列出了所有可以实现transition效果的CSS属性值以及值的类型，大家可以点这里了解详情。这里需要提醒一点是，并不是什么属性改变都为触发transition动作效果，比如页面的自适应宽度，当浏览器改变宽度时，并不会触发transition的效果。但上述表格所示的属性类型改变都会触发一个transition动作效果。
 
 ### transition-duration :  `time`
 >`transition-duration`是用来指定元素转换过程的持续时间,取值:`<time>`为数值，单位为`s(秒)`,可以作用于所有元素,包括`:before`和`:after`伪元素。其默认值是`0`, 也就是变换时是即时的。
@@ -45,3 +62,25 @@
 - `cubic-bezier :`（该值允许你去自定义一个时间曲线）， 特定的`cubic-bezier`曲线。 `(x1, y1, x2, y2)`四个值特定于曲线上点P1和点P2。所有值需在`[0, 1]`区域内，否则无效。
 
 >其是`cubic-bezier`为通过贝赛尔曲线来计算`转换`过程中的属性值，如下曲线所示，通过改变`P1(x1, y1)`和`P2(x2, y2)`的坐标可以改变整个过程的`Output Percentage`。初始默认值为`default`。
+
+### transition-delay : `<time>`
+>`transition-delay`是用来指定一个动画开始执行的时间, 也就是说当改变元素属性值后多长时间开始执行`transition`效果, 取 值: ``<time>``为数值, 单位为`s（秒）`, 它的使用和`transition-duration`极其相似, 也可以作用于所有元素, 包括``:before``和``:after``伪元素。 默认大小是`0`, 也就是变换立即执行, 没有延迟。
+
+----
+
+## transitionEnd事件
+>CSS的过渡效果`transition`结束后, 触发`transitionEnd`事件。
+
+
+````javascript
+el.addEventListener('transitionend', onTransitionEnd, false);
+
+function onTransitionEnd() {
+  console.log('Transition end');
+}
+````
+##### transitionEnd的事件对象具有以下属性:
+
+- `propertyName`: 发生`transition`效果的`CSS`属性名。
+- `elapsedTime`: `transition`效果持续的秒数, 不含`transition-delay`的时间。
+- `pseudoElement`: 如果`transition`效果发生在伪元素, 会返回该伪元素的名称, 以“``::``”开头。如果不发生在伪元素上, 则返回一个空字符串。
