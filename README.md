@@ -24,6 +24,8 @@
    - [BFC 块级格式化范围](./layout/BFC.md)
 - [JavaScript](./JavaScript/JavaScript.md)
    - [标准参考教程](http://javascript.ruanyifeng.com/)
+   - [ECMAScript 6](http://es6.ruanyifeng.com/)
+   - [框架库大全](http://cnodejs.org/topic/56e8c95dcf7763a6045c4ae4)
 - [Node.js](./Node/node.md)
 - [工具](./tool/tool.md)
    - [Git](./tool/git.md)
