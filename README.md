@@ -25,6 +25,7 @@
    - [CSS 盒子模型(Box Model)](./layout/Box-Model/Box-Model.md)
    - [BFC 块级格式化范围](./layout/BFC.md)
    - [Element in the middle(元素居中)](./layout/Element-middle.md)
+   - [haslayout(ie 渲染引擎)](./layout/haslayout.md)
 - [JavaScript](./JavaScript/JavaScript.md)
    - [标准参考教程](http://javascript.ruanyifeng.com/)
    - [ECMAScript 6](http://es6.ruanyifeng.com/)
