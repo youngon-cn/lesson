@@ -42,6 +42,7 @@
    - [终极 Shell——ZSH](./tool/oh my zsh.md)
    - [vagrant](,/tool/vagrant.md)
    - [Docker](./tool/Docker.md)
+   - [aria2](./tool/aria2.md)
 - [Linux](./tool/tool.md)
   - [unzip](./linux/unzip.md)
 
