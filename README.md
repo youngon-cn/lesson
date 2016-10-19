@@ -42,7 +42,8 @@
    - [终极 Shell——ZSH](./tool/oh my zsh.md)
    - [vagrant](,/tool/vagrant.md)
    - [Docker](./tool/Docker.md)
-
+- [Linux](./tool/tool.md)
+  - [unzip](./linux/unzip.md)
 
 - [工作与学习](./WorkAndLearn/WorkAndLearn.md)
    - [Getting Things Done (把事情做完)](./GTD.md)
