@@ -5,3 +5,4 @@
 [vagrant](./vagrant.md)
 [Docker](./Docker.md)
 [aria2](./aria2.md)
+[shadowsocks服务器搭建](./shadowsocks服务器.md)

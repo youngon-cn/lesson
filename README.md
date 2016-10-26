@@ -43,6 +43,7 @@
    - [vagrant](,/tool/vagrant.md)
    - [Docker](./tool/Docker.md)
    - [aria2](./tool/aria2.md)
+   - [shadowsocks服务器搭建](./tool/shadowsocks服务器.md)
 - [Linux](./tool/tool.md)
   - [unzip](./linux/unzip.md)
 
