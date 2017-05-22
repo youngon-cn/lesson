@@ -9,23 +9,23 @@
 #### pip安装shadowsocks
 `pip install shadowsocks`
 
-安装完毕创建一个文件`ss.json`
-```json
+安装完毕创建一个文件`ss.json`(去除注释)
+```javascript
 { 
- "server":"104.128.237.85", // 服务器地址
- "server_port":8388, // 端口
+ "server": "104.128.237.85", // 服务器地址
+ "server_port": 8388, // 端口
  "local_address": "127.0.0.1",
- "local_port":1080, 本地 端口
- "port_password":{  // 配置多个端口和密码
-    "9000":"nobey",
-    "9001":"nobey",
-    "9002":"nobey",
-    "9003":"nobey",
-    "9004":"nobey"
-    },
- "password":"nobey", // 密码
- "timeout":600,
- "method":"aes-256-cfb"  // 加密方式
+ "local_port": 1080, 本地 端口
+ "port_password": {  // 配置多个端口和密码
+    "9000": "nobey",
+    "9001": "nobey",
+    "9002": "nobey",
+    "9003": "nobey",
+    "9004": "nobey"
+  },
+ "password": "nobey", // 密码
+ "timeout": 600,
+ "method": "aes-256-cfb"  // 加密方式
 }
 
 ```
